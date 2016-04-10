@@ -1,0 +1,24 @@
+.tarifas {
+  margin: 80px 0px;
+  p {
+    margin: 0 !important;
+  }
+  .subtitulo {
+    color: $moradoClaro;
+    font-weight: $fuenteBold;
+    font-size: 20px;
+  }
+  .descripcion {
+    color: $grisOscuro;
+  }
+  .tituloTarifas {
+    color: $grisOscuro;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .precio {
+    color: $moradoOscuro;
+    font-weight: $fuenteBold;
+    font-size: 30px;
+  }
+}
