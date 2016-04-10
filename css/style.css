@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+body {
+  margin: 0px;
+  font-family: "Raleway", sans-serif !important; }
+
+a {
+  outline: none !important; }
+
+.menuSuperiorUno {
+  background-color: #999999;
+  color: #fff;
+  padding: 10px 0; }
+
+.menuSuperiorDos .opciones {
+  font-weight: 700; }
+  .menuSuperiorDos .opciones .elemento {
+    margin: 20px 0;
+    border-left: 1px solid #bfc1d2;
+    padding-left: 25px; }
+    .menuSuperiorDos .opciones .elemento .rowSuperior {
+      color: #999999; }
+      .menuSuperiorDos .opciones .elemento .rowSuperior i {
+        color: #d837a0;
+        margin-right: 5px; }
+    .menuSuperiorDos .opciones .elemento .rowInferior {
+      color: #5e564e; }
+
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #999999 !important; }
+
+.logo {
+  padding-top: 20px; }
+
+.menuSuperior {
+  background-color: #73066b; }
+  .menuSuperior .icon-bar {
+    background-color: #fff !important; }
+  .menuSuperior .bordeBlanco {
+    padding-left: 0; }
+  .menuSuperior .rectanguloBlanco {
+    height: 20px;
+    background-color: #fff;
+    width: 90%;
+    float: left; }
+  .menuSuperior .sesgar {
+    height: 20px;
+    width: 10%;
+    background-color: #fff;
+    transform: skewX(-45deg);
+    float: right;
+    position: relative;
+    left: -5%; }
+  .menuSuperior .rectanguloBlanco {
+    height: 20px;
+    background-color: #fff; }
+  .menuSuperior .navbar.navbar-default {
+    background-color: #73066b;
+    border: none !important;
+    font-weight: 700;
+    margin-bottom: 0; }
+    .menuSuperior .navbar.navbar-default .active a {
+      background-color: transparent !important;
+      border-bottom: 4px solid #fff !important; }
+    .menuSuperior .navbar.navbar-default a:hover {
+      background-color: transparent !important;
+      border-bottom: 4px solid #fff !important; }
+    .menuSuperior .navbar.navbar-default .nivelUno {
+      color: #fff !important; }
+    .menuSuperior .navbar.navbar-default .fa {
+      color: #fff;
+      font-size: 4px;
+      margin: 15px 0;
+      line-height: 20px; }
+
+@media (max-width: 767px) {
+  .menuSuperior .fa {
+    display: none; }
+
+  .menuSuperiorUno {
+    text-align: center; } }
+@media (max-width: 992px) {
+  .rectanguloBlanco {
+    display: none; }
+
+  .sesgar {
+    display: none; }
+
+  .logo a {
+    display: block;
+    text-align: center; } }
+.fondoFooter {
+  height: 170px;
+  background: url("../img/fondoFooter.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important; }
+
+.footerMedio {
+  background-color: #8c0783;
+  color: #fff;
+  padding: 30px 0; }
+
+.footerDerechos {
+  background-color: #73066b;
+  color: #fff;
+  padding: 0 0 15px !important; }
+  .footerDerechos .row {
+    width: 100%; }
+  .footerDerechos .elemento {
+    padding: 0 30px 1px !important; }
+  .footerDerechos .bordeBlanco {
+    padding: 0 !important; }
+  .footerDerechos a {
+    color: #fff; }
+  .footerDerechos .desarrolladoPor {
+    text-align: right; }
+  .footerDerechos a:focus,
+  .footerDerechos a:hover {
+    color: #fff;
+    text-decoration: underline; }
+  .footerDerechos .rectanguloBlanco {
+    height: 20px;
+    background-color: #8c0783;
+    width: 90%;
+    float: left; }
+  .footerDerechos .sesgar {
+    height: 20px;
+    width: 10%;
+    background-color: #8c0783;
+    transform: skewX(-45deg);
+    float: right;
+    position: relative;
+    left: -5%; }
+
+.logoFooter {
+  margin-bottom: 20px !important; }
+
+@media (max-width: 992px) {
+  .footerMedio {
+    text-align: center; }
+
+  .footerDerechos {
+    text-align: center;
+    padding: 0px 0px 0px 25px !important; }
+
+  .desarrolladoPor {
+    text-align: center !important;
+    padding: 10px 0; }
+
+  .footerDerechos .bordeBlanco {
+    display: none; }
+  .footerDerechos .elemento {
+    padding-top: 20px !important; }
+
+  .desarrolladoPor.elemento {
+    margin-bottom: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,110 @@
+.menuSuperiorUno {
+  background-color: $grisOscuro;
+  color: #fff;
+  padding: 10px 0;
+}
+.menuSuperiorDos {
+  .opciones {
+    font-weight: $fuenteBold;
+    .elemento {
+      margin: 20px 0;
+      border-left: 1px solid $grisClaro;
+      padding-left: 25px;
+      .rowSuperior {
+        color: $grisOscuro;
+        i {
+          color: $rosadoClaro;
+          margin-right: 5px;
+        }
+      }
+      .rowInferior {
+        color: $negro;
+      }
+    }
+  }
+}
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: $grisOscuro !important;
+}
+.logo {
+  padding-top: 20px;
+}
+.menuSuperior {
+  background-color: $moradoOscuro;
+  .icon-bar {
+    background-color: #fff !important;
+  }
+  .bordeBlanco {
+    padding-left: 0;
+  }
+  .rectanguloBlanco {
+    height: 20px;
+    background-color: #fff;
+    width: 90%;
+    float: left;
+  }
+  .sesgar {
+    height: 20px;
+    width: 10%;
+    background-color: #fff;
+    transform: skewX(-45deg);
+    float: right;
+    position: relative;
+    left: -5%;
+  }
+  .rectanguloBlanco {
+    height: 20px;
+    background-color: #fff;
+  }
+  .navbar.navbar-default {
+    background-color: $moradoOscuro;
+    border: none !important;
+    font-weight: $fuenteBold;
+    margin-bottom: 0;
+    .active {
+      a {
+        background-color: transparent !important;
+        border-bottom: 4px solid #fff !important;
+      }
+    }
+    a:hover {
+      background-color: transparent !important;
+      border-bottom: 4px solid #fff !important;
+    }
+    .nivelUno {
+      color: #fff !important;
+    }
+    .fa {
+      color: #fff;
+      font-size: 4px;
+      margin: 15px 0;
+      line-height: 20px;
+    }
+  }
+}
+@media(max-width:767px) {
+  .menuSuperior .fa {
+    display: none;
+  }
+  .menuSuperiorUno {
+    text-align: center;
+  }
+}
+@media(max-width:992px) {
+  .rectanguloBlanco {
+    display: none;
+  }
+  .sesgar {
+    display: none;
+  }
+  .logo a {
+    display: block;
+    text-align: center;
+  }
+}
+@media(max-width:1200px) {}
+@media(min-width:768px) {}
+@media(min-width:992px) {}
+@media(min-width:1200px) {}

@@ -1,0 +1,25 @@
+//Tipo de letra
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+$fuente: 'Raleway', sans-serif !important;
+$fuenteRegular: 400;
+$fuenteBold: 700;
+
+//Colores
+$grisOscuro: #999999;
+$grisClaro: #bfc1d2;
+
+$negro: #5e564e;
+
+$rosadoClaro: #d837a0;
+
+$moradoOscuro: #73066b;
+$moradoClaro: #8c0783;
+
+//Variables Globales
+body {
+    margin: 0px;
+    font-family: $fuente;
+}
+a {
+  outline: none !important;
+}

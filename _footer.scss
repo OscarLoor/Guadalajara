@@ -1,0 +1,85 @@
+.fondoFooter {
+  height: 170px;
+  background: url("../img/fondoFooter.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important;
+}
+.footerMedio {
+  background-color: $moradoClaro;
+  color: #fff;
+  padding: 30px 0;
+}
+.footerDerechos {
+  background-color: $moradoOscuro;
+  color: #fff;
+  padding: 0 0 15px !important;
+  .row {
+    width: 100%;
+  }
+  .elemento {
+    padding: 0 30px 1px !important;
+  }
+  .bordeBlanco {
+    padding: 0 !important;
+  }
+  a {
+    color: #fff;
+  }
+  .desarrolladoPor {
+    text-align: right;
+  }
+  a:focus,
+  a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .rectanguloBlanco {
+    height: 20px;
+    background-color: $moradoClaro;
+    width: 90%;
+    float: left;
+  }
+  .sesgar {
+    height: 20px;
+    width: 10%;
+    background-color: $moradoClaro;
+    transform: skewX(-45deg);
+    float: right;
+    position: relative;
+    left: -5%;
+  }
+}
+.logoFooter {
+  margin-bottom: 20px !important;
+}
+@media(max-width:767px) {}
+@media(max-width:992px) {
+  .footerMedio {
+    text-align: center;
+  }
+  .footerDerechos {
+    text-align: center;
+    padding: 0px 0px 0px 25px !important;
+  }
+  .desarrolladoPor {
+    text-align: center !important;
+    padding: 10px 0;
+  }
+  .footerDerechos {
+    .bordeBlanco {
+      display: none;
+    }
+    .elemento {
+      padding-top: 20px !important;
+    }
+  }
+  .desarrolladoPor.elemento {
+    margin-bottom: 20px;
+}
+}
+@media(max-width:1200px) {}
+@media(min-width:768px) {}
+@media(min-width:992px) {}
+@media(min-width:1200px) {}
