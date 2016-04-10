@@ -6,6 +6,9 @@ body {
 a {
   outline: none !important; }
 
+#myCarousel {
+  background-color: #000; }
+
 .menuSuperiorUno {
   background-color: #999999;
   color: #fff;
