@@ -204,4 +204,31 @@ a {
     color: #999999;
     text-decoration: none; }
 
+.normas {
+  margin: 80px 0; }
+  .normas img {
+    width: 100%;
+    height: auto; }
+  .normas .tituloPrincipal {
+    font-size: 20px;
+    color: #73066b;
+    margin-top: 10px;
+    font-weight: 700; }
+  .normas .titulo {
+    font-weight: 700;
+    color: #5e564e; }
+  .normas .subtitulo {
+    font-weight: 700;
+    color: #999999; }
+  .normas p {
+    color: #5e564e; }
+  .normas .fa {
+    font-size: 31px;
+    text-align: center;
+    margin: auto;
+    width: 10px;
+    color: #73066b; }
+  .normas .descripcion {
+    margin-bottom: 40px; }
+
 /*# sourceMappingURL=style.css.map */
