@@ -102,6 +102,8 @@ a {
   background-color: #8c0783;
   color: #fff;
   padding: 30px 0; }
+  .footerMedio .fa {
+    margin-right: 5px; }
 
 .footerDerechos {
   background-color: #73066b;
@@ -144,7 +146,7 @@ a {
 
   .footerDerechos {
     text-align: center;
-    padding: 0px 0px 0px 25px !important; }
+    padding: 0 0 0 25px !important; }
 
   .desarrolladoPor {
     text-align: center !important;

@@ -10,6 +10,9 @@
   background-color: $moradoClaro;
   color: #fff;
   padding: 30px 0;
+  .fa {
+    margin-right: 5px;
+  }
 }
 .footerDerechos {
   background-color: $moradoOscuro;
@@ -61,7 +64,7 @@
   }
   .footerDerechos {
     text-align: center;
-    padding: 0px 0px 0px 25px !important;
+    padding: 0 0 0 25px !important;
   }
   .desarrolladoPor {
     text-align: center !important;
@@ -77,7 +80,7 @@
   }
   .desarrolladoPor.elemento {
     margin-bottom: 20px;
-}
+  }
 }
 @media(max-width:1200px) {}
 @media(min-width:768px) {}
