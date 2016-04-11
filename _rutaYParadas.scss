@@ -1,0 +1,35 @@
+#mapaGoogleRuta {
+  height: 400px;
+}
+.descripcionRuta {
+  padding: 30px 0;
+}
+.descripcionRuta {
+  color: $negro;
+  .tituloDescripcion {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .elementoDescripcion p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .fa {
+    float: left;
+    font-size: 27px;
+    margin-right: 10px;
+    color: $moradoClaro;
+  }
+  hr {
+    float: left;
+    width: 20px;
+    height: 4px;
+    background-color: $moradoOscuro;
+    padding: 0;
+    margin-right: 11px;
+    margin-top: 11px;
+  }
+  .elementoDescripcion {
+    margin-top: 8px;
+  }
+}

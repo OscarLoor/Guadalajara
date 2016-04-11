@@ -106,9 +106,9 @@
               <ul class="nav navbar-nav">
                 <li><a class="nivelUno" href="index.html">Inicio</a></li>
                 <li><i class="fa fa-circle"></i></li>
-                <li class="active"><a class="nivelUno" href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a class="nivelUno" href="quienesSomos.html">Quienes Somos</a></li>
                 <li><i class="fa fa-circle"></i></li>
-                <li><a class="nivelUno" href="ruta.html">Ruta</a></li>
+                <li class="active"><a class="nivelUno" href="ruta.html">Ruta</a></li>
                 <li><i class="fa fa-circle"></i></li>
                 <li><a class="nivelUno" href="#">Organigrama</a></li>
                 <li><i class="fa fa-circle"></i></li>
@@ -127,42 +127,38 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Quienes Somos</h1>
+          <h1>Ruta y Paradas</h1>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid quienesSomos">
+  <div id="mapaGoogleRuta" class="container-fluid">
+
+  </div>
+
+  <div class="container-fluid descripcionRuta">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2>Historia</h2>
+        <div class="col-md-6 tituloDescripcion">
+          Descripción de elementos:
+        </div>
+        <div class="col-md-3 elementoDescripcion">
           <hr>
-          <p class="descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+          <p>
+            Ruta
+          </p>
+        </div>
+        <div class="col-md-3 elementoDescripcion">
+          <i class="fa fa-dot-circle-o"></i>
+          <p>
+            Paradas
           </p>
         </div>
 
-        <div class="col-md-12">
-          <h2>Misión</h2>
-          <hr>
-          <p class="descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-          </p>
-        </div>
-
-        <div class="col-md-12">
-          <h2>Visión</h2>
-          <hr>
-          <p class="descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-          </p>
-        </div>
       </div>
     </div>
   </div>
-
   <div class="container-fluid fondoFooter"></div>
 
   <div class="container-fluid footerMedio">
@@ -219,6 +215,102 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
+
+  <!--Mapa Google-->
+  <script type="text/javascript">
+  /*Google Map*/
+  var myLatlng = new google.maps.LatLng('-0.113052', '-78.448075');
+
+  var mapOptions = {
+    center: myLatlng,
+    zoom: 14,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false
+  };
+
+  var mapaGoogle = new google.maps.Map(document.getElementById("mapaGoogleRuta"), mapOptions);
+
+  mapaGoogle.setCenter(new google.maps.LatLng('-0.113052', '-78.448075'));
+
+  //Marcador Recorrido
+  var image = 'img/marker.png';
+  var latitudGoogle;
+  var longitudGoogle;
+  var log = [];
+
+  var marcadorUnidadUno = new google.maps.Marker({
+    position: {
+      lat: -0.113052,
+      lng: -78.448075
+    },
+    map: mapaGoogle,
+    icon: image
+  });
+
+  //Crear linea para la ruta
+  var rutaCoordenadas = [
+    {lat: -0.113194, lng: -78.448092},
+    {lat: -0.109407, lng: -78.444755},
+    {lat: -0.108474, lng: -78.445935},
+    {lat: -0.107262, lng: -78.446064},
+    {lat: -0.109408, lng: -78.459314},
+    {lat: -0.109526, lng: -78.459325},
+    {lat: -0.109676, lng: -78.460334},
+    {lat: -0.110491, lng: -78.460216},
+    {lat: -0.111349, lng: -78.460270},
+    {lat: -0.112304, lng: -78.460023},
+    {lat: -0.112551, lng: -78.460109},
+    {lat: -0.111703, lng: -78.460957},
+    {lat: -0.111649, lng: -78.461611},
+    {lat: -0.128365, lng: -78.469796},
+    {lat: -0.128850, lng: -78.472694},
+    {lat: -0.130560, lng: -78.472392},
+    {lat: -0.130335, lng: -78.471086},
+    {lat: -0.133951, lng: -78.470775},
+    {lat: -0.138028, lng: -78.470003},
+    {lat: -0.141547, lng: -78.470175},
+    {lat: -0.143339, lng: -78.469714},
+    {lat: -0.145968, lng: -78.469403},
+    {lat: -0.147556, lng: -78.469328},
+    {lat: -0.148210, lng: -78.468910},
+    {lat: -0.151697, lng: -78.464715},
+    {lat: -0.152448, lng: -78.464640},
+    {lat: -0.155978, lng: -78.466217},
+    {lat: -0.161267, lng: -78.467150},
+    {lat: -0.166878, lng: -78.468770},
+    {lat: -0.176094, lng: -78.472793},
+    {lat: -0.176952, lng: -78.473458},
+    {lat: -0.179763, lng: -78.474284},
+    {lat: -0.181619, lng: -78.475550},
+    {lat: -0.183486, lng: -78.476140},
+    {lat: -0.185846, lng: -78.477942},
+    {lat: -0.186951, lng: -78.479637},
+    {lat: -0.189644, lng: -78.480914},//Entrada Plaza Argentina
+    {lat: -0.190728, lng: -78.481890},
+    {lat: -0.194397, lng: -78.483381},
+    {lat: -0.197519, lng: -78.485623},
+    {lat: -0.198098, lng: -78.486760},
+    {lat: -0.198785, lng: -78.484271},
+    {lat: -0.199954, lng: -78.482758},
+    {lat: -0.203387, lng: -78.482962},
+    {lat: -0.203698, lng: -78.483144},
+    {lat: -0.212213, lng: -78.496672},
+    {lat: -0.212365, lng: -78.497034},
+    {lat: -0.213457, lng: -78.497935} //Termino en el parque por el eugenio espejo
+  ];
+
+  var rutaObjeto = new google.maps.Polyline({
+    path: rutaCoordenadas,
+    geodesic: true,
+    strokeColor: '#73066b',
+    strokeOpacity: 1.0,
+    strokeWeight: 4
+  });
+
+  rutaObjeto.setMap(mapaGoogle);
+
+
+  </script>
 </body>
 
 </html>

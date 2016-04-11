@@ -1,0 +1,39 @@
+.separador {
+    height: 100px;
+}
+
+.contactoInformacion {
+    padding: 60px 0px;
+    color: $negro;
+    h2 {
+    font-weight: $fuenteBold;
+}
+}
+
+#formularioDeContacto{
+  input {
+    width: 100%;
+    border: none;
+    background-color: #ededed;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+textarea {
+    width: 100%;
+    border: none;
+    background-color: #ededed;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#botonEnviar {
+    background-color: $moradoOscuro;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+}
+}

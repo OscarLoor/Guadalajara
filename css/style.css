@@ -9,14 +9,14 @@ a {
 #myCarousel {
   background-color: #000; }
 
-.titulo {
+.tituloPaginas {
   height: 170px;
   background: url("../img/fondoTitulo.jpg");
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
   padding: 0 !important; }
-  .titulo h1 {
+  .tituloPaginas h1 {
     color: #fff;
     margin-top: 55px;
     border-bottom: 4px solid #fff;
@@ -255,5 +255,67 @@ a {
   .quienesSomos .descripcion {
     margin-bottom: 40px;
     margin-top: 30px; }
+
+#mapaGoogleRuta {
+  height: 400px; }
+
+.descripcionRuta {
+  padding: 30px 0; }
+
+.descripcionRuta {
+  color: #5e564e; }
+  .descripcionRuta .tituloDescripcion {
+    font-weight: bold;
+    font-size: 30px; }
+  .descripcionRuta .elementoDescripcion p {
+    font-weight: bold;
+    font-size: 20px; }
+  .descripcionRuta .fa {
+    float: left;
+    font-size: 27px;
+    margin-right: 10px;
+    color: #8c0783; }
+  .descripcionRuta hr {
+    float: left;
+    width: 20px;
+    height: 4px;
+    background-color: #73066b;
+    padding: 0;
+    margin-right: 11px;
+    margin-top: 11px; }
+  .descripcionRuta .elementoDescripcion {
+    margin-top: 8px; }
+
+.separador {
+  height: 100px; }
+
+.contactoInformacion {
+  padding: 60px 0px;
+  color: #5e564e; }
+  .contactoInformacion h2 {
+    font-weight: 700; }
+
+#formularioDeContacto input {
+  width: 100%;
+  border: none;
+  background-color: #ededed;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+#formularioDeContacto textarea {
+  width: 100%;
+  border: none;
+  background-color: #ededed;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+#formularioDeContacto #botonEnviar {
+  background-color: #73066b;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

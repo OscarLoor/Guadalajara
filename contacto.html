@@ -106,13 +106,13 @@
               <ul class="nav navbar-nav">
                 <li><a class="nivelUno" href="index.html">Inicio</a></li>
                 <li><i class="fa fa-circle"></i></li>
-                <li class="active"><a class="nivelUno" href="quienesSomos.html">Quienes Somos</a></li>
+                <li><a class="nivelUno" href="quienesSomos.html">Quienes Somos</a></li>
                 <li><i class="fa fa-circle"></i></li>
                 <li><a class="nivelUno" href="ruta.html">Ruta</a></li>
                 <li><i class="fa fa-circle"></i></li>
                 <li><a class="nivelUno" href="#">Organigrama</a></li>
                 <li><i class="fa fa-circle"></i></li>
-                <li><a class="nivelUno" href="contacto.html">Contacto</a></li>
+                <li class="active"><a class="nivelUno" href="contacto.html">Contacto</a></li>
               </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -127,51 +127,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Quienes Somos</h1>
+          <h1>Contáctanos</h1>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid quienesSomos">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Historia</h2>
-          <hr>
-          <p class="descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-          </p>
-        </div>
-
-        <div class="col-md-12">
-          <h2>Misión</h2>
-          <hr>
-          <p class="descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-          </p>
-        </div>
-
-        <div class="col-md-12">
-          <h2>Visión</h2>
-          <hr>
-          <p class="descripcion">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid fondoFooter"></div>
-
-  <div class="container-fluid footerMedio">
+  <div class="container-fluid contactoInformacion">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="logo logoFooter">
-            <a href="/"><img src="img/logoBlanco.png" alt="Logo Transportes Guadalajara" /></a>
-          </div>
+          <h2>Nuestras oficinas</h2>
           <p><i class="fa fa-map-marker"></i> Av. Eloy Alfaro y Capitán Ramon Borja</p>
           <p><i class="fa fa-globe"></i> Quito - Ecuador</p>
           <p><i class="fa fa-envelope"></i> info@paginaswebenquito.ec</p>
@@ -179,13 +145,49 @@
           <p><i class="fa fa-mobile"></i> 09-95-601-568</p>
         </div>
         <div class="col-md-8">
-          <div id="map" style="height: 230px; width: 100%;"></div>
+          <h2>Formulario de contacto</h2>
+          <form class="hijo" id="formularioDeContacto" action="enviar.php" method="post">
+            <div class="elementoInput">
+             Nombre
+             <input type="text" name="nombre" required>
+            </div>
+
+           <div class="elementoInput">
+             Email
+             <input type="email" name="email" required>
+            </div>
+
+           <div class="elementoInput">
+             Teléfono
+             <input type="phone" name="telefono">
+            </div>
+
+           <div class="elementoInput">
+             Mensaje
+             <textarea name="mensaje" form="formularioDeContacto" required></textarea>
+            </div>
+           <input id="botonEnviar" type="submit" value="Enviar">
+           <div id="mensajeFormulario"></div>
+         </div>
+          </form>
 
 
         </div>
 
       </div>
     </div>
+  </div>
+
+  <div id="mapaGoogleRuta" class="container-fluid">
+
+  </div>
+
+  <div class="container-fluid separador">
+
+  </div>
+  <div class="container-fluid fondoFooter"></div>
+
+  <div class="container-fluid footerMedio" style="padding: 20px 0 !important;">
   </div>
   </div>
 
@@ -219,6 +221,86 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
+
+  <!--Mapa Google-->
+  <script type="text/javascript">
+  /*Google Map*/
+  var myLatlng = new google.maps.LatLng('-0.113052', '-78.448075');
+
+  var mapOptions = {
+    center: myLatlng,
+    zoom: 14,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false
+  };
+
+  var mapaGoogle = new google.maps.Map(document.getElementById("mapaGoogleRuta"), mapOptions);
+
+  mapaGoogle.setCenter(new google.maps.LatLng('-0.113052', '-78.448075'));
+
+  //Marcador Recorrido
+  var image = 'img/marker.png';
+  var latitudGoogle;
+  var longitudGoogle;
+  var log = [];
+
+  var marcadorUnidadUno = new google.maps.Marker({
+    position: {
+      lat: -0.113052,
+      lng: -78.448075
+    },
+    map: mapaGoogle,
+    icon: image
+  });
+
+  </script>
+
+  <script>
+   $(document).ready(function() {
+
+     // process the form
+     $('form').submit(function(event) {
+
+         // get the form data
+         // there are many ways to get this data using jQuery (you can use the class or id also)
+         var formData = {
+             'nombre'              : $('input[name=nombre]').val(),
+             'email'             : $('input[name=email]').val(),
+             'telefono'    : $('input[name=telefono]').val(),
+            'mensaje'    : $('textarea[name=mensaje]').val()
+         };
+
+          // process the form
+ $.ajax({
+     type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+     url         : 'enviar.php', // the url where we want to POST
+     data        : formData, // our data object
+     dataType    : 'json' // what type of data do we expect back from the server
+ })
+     // using the done promise callback
+     .done(function(data) {
+
+ if(data.success==true){
+ $('#mensajeFormulario').empty();
+ 	$('#mensajeFormulario').append('<p style="color: green; text-align: center; background-color: rgba(255, 255, 255, 0.81); float: left; width: 100%; padding: 5px; margin-top: 5px;">Mensaje enviado correctamente</p>');
+ }else{
+ 	$('#mensajeFormulario').append('<p style="color: red; text-align: center; background-color: rgba(255, 255, 255, 0.81); float: left; width: 100%; padding: 5px; margin-top: 5px;">Mensaje no enviado</p>');
+ }
+         // log data to the console so we can see
+         //console.log(data);
+
+
+
+     });
+
+         // stop the form from submitting the normal way and refreshing the page
+         event.preventDefault();
+     });
+
+ });
+
+
+  </script>
 </body>
 
 </html>
