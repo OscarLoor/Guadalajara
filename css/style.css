@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 body {
-  margin: 0px;
+  margin: 0;
   font-family: "Raleway", sans-serif !important; }
 
 a {
@@ -8,6 +8,19 @@ a {
 
 #myCarousel {
   background-color: #000; }
+
+.titulo {
+  height: 170px;
+  background: url("../img/fondoTitulo.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important; }
+  .titulo h1 {
+    color: #fff;
+    margin-top: 55px;
+    border-bottom: 4px solid #fff;
+    float: left; }
 
 .menuSuperiorUno {
   background-color: #999999;
@@ -230,5 +243,17 @@ a {
     color: #73066b; }
   .normas .descripcion {
     margin-bottom: 40px; }
+
+.quienesSomos {
+  padding: 60px 0; }
+  .quienesSomos h2 {
+    text-align: center; }
+  .quienesSomos hr {
+    width: 27px;
+    height: 4px;
+    background-color: #73066b; }
+  .quienesSomos .descripcion {
+    margin-bottom: 40px;
+    margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

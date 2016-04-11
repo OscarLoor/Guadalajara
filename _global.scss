@@ -2,28 +2,34 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 $fuente: 'Raleway', sans-serif !important;
 $fuenteRegular: 400;
-$fuenteBold: 700;
-
-//Colores
+$fuenteBold: 700; //Colores
 $grisOscuro: #999999;
 $grisClaro: #bfc1d2;
-
 $negro: #5e564e;
-
 $rosadoClaro: #d837a0;
-
 $moradoOscuro: #73066b;
-$moradoClaro: #8c0783;
-
-//Variables Globales
+$moradoClaro: #8c0783; //Variables Globales
 body {
-    margin: 0px;
-    font-family: $fuente;
+  margin: 0;
+  font-family: $fuente;
 }
 a {
   outline: none !important;
 }
-
 #myCarousel {
-    background-color: #000;
+  background-color: #000;
+}
+.titulo {
+  height: 170px;
+  background: url("../img/fondoTitulo.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important;
+  h1 {
+    color: #fff;
+    margin-top: 55px;
+    border-bottom: 4px solid #fff;
+    float: left;
+  }
 }
